@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula1</title>
+    <link rel="stylesheet" href="/static/Css/Home.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+        <div class="footer"  onmousemove="showCoords(event)" onmouseout="clearCoor()">
+            Check this box if you are not a robot: <input type="checkbox" id="myCheckbox">
+            <p id="coord"></p>
+            <div class="topbt">
+                <button onclick="clickCounter()" onclick="topFunction()" id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
+                <div id="result"></div>
+            </div>
+            <button class="lastR" onclick="openWin()">Last Race</button>
+            <button  class="Time" type="button" onclick="loadDoc()">Show Time</button>
+            <div class="timpC">
+                <p id="timp"></p>
+            </div>
+            <table class="timerContainer">
+                <tr class="info">
+                    <td colspan="4">Next season start in</td>
+                </tr>
+                <tr class="info">
+                    <td id="days">120</td>
+                    <td id="hours">4</td>
+                    <td id="minutes">12</td>
+                    <td id="seconds">6</td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+ 
+                <button id="btn1" onclick="removeLi1()" class="removebtn1">Remove left img</button>
+                <button id="btn2" onclick="removeLi2()" class="removebtn2">Remove right img</button>
+
+            <div class="size">
+                <p class="boxt1">Change font size</p>
+                <input type="text"  onkeypress="changeTextSize(event)" id="input1"  >
+                <p id="boxT" class="boxt">Change font color</p>
+                <input type="text" onkeypress="changefontcolor()" id="input2" >
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/f3a776a26b.js" crossorigin="anonymous"></script>
+        <script src="/static/JS/Home.js"></script>  
+</body>
+</html>

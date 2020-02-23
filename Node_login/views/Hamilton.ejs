@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula1</title>
+    <link rel="stylesheet" href="/static/Css/Hamilton.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Logo">Formula1</div>
+        <nav>
+            <ul>
+                <li><a href="/Home_log">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Standings</a>
+                    <ul>
+                        <li><a href="../Drivers_Standings.html">Drivers</a></li>
+                        <li><a href="../Teams_Standings.html">Teams</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Drivers.html">Drivers</a></li>
+                <li><a href="../Teams.html">Teams</a></li>
+                <li><a href="#">Last Race</a></li>
+                <li onclick="gobottom()" id="nexts"><a>Next season</a></li>
+                <a href="/logout" class="LogA" ><button class="LogB" >Logout</buttonclass="LogB"></a>
+            </ul>
+        </nav>
+        <div class="menu-tog"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+    <img src="/static/imagini/F1_banner.jpg" alt="Banner" class="Banner">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-tog').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <div class="tbody">
+        <div class="flexbox">
+            <div class="gallery">
+                <img src="/static/imagini/Drivers/Ham.jpg" alt="A doua imagine">
+                <div class="desc">
+                    <h2>Lewis Hamilton</h2>
+                    <div class="box">
+                        <div class="casca">
+                            <img src="/static/imagini/Casti/HAM.png" alt="Casca">
+                        </div>
+                        <div class="Number">44</div>
+                        <div class="flag">
+                            <img src="/static/imagini/Flags/GBR.jpg" alt="GBR">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Team</th>
+                                <td>Mercedes</td>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <td>United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Podiums</th>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <th>Points</th>
+                                <td>3405</td>
+                            </tr>
+                            <tr>
+                                <th>Grand Prix</th>
+                                <td>249</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>6 </td>
+                            </tr>
+                            <tr>
+                                <th>Date of birth</th>
+                                <td>07/01/1985</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h2>Biography</h2>
+        <div class="flex-box">
+            <div class="podium">
+                <img src="/static/imagini/Biography/Ham.jpg" alt="Podium">
+                <div class="desc1">2019 Silverstone Podium</div>
+            </div>
+            <div class="descriere">
+                <p>Hamilton was born on 7 January 1985 in Stevenage, Hertfordshire, England. Hamilton's mother, Carmen (Larbalestier), is white British, while his father, Anthony Hamilton, is black British, making him mixed-race; he self-identifies as black. Lewis's parents separated when he was two and, as a result of this, he lived with his mother and half-sisters until he was twelve. He then moved to live with his father, stepmother Linda and half-brother Nicolas, who is also a professional racing driver and has cerebral palsy.</p>
+                <p>‘Still I Rise’ – these are the words emblazoned across the back of Lewis Hamilton’s helmet and tattooed across his shoulders, and ever since annihilating expectations with one of the greatest rookie performances in F1 history in 2007, that’s literally all he’s done: risen to the top of the all-time pole positions list ahead of his hero Ayrton Senna, surged into second place in the wins column behind only the inimitable Michael Schumacher, and surpassed the legendary Sir Jackie Stewart for the most championship titles by a British driver. </p>
+                <p>Respect is hard earned in F1, but Hamilton has it from every one of his peers. Why? Because they know that whatever the track, whatever the conditions, whatever the situation, when his visor goes down and the lights go out, it’s Hammertime. </p>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="/static/imagini/Ham/1.jpg"  style="width:100%">
+          <div class="text">	
+                Lewis Hamilton Formula One World Championship, Australian Grand Prix, Race</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="/static/imagini/Ham/2.jpg"  style="width:100%">
+          <div class="text">	
+                Lewis Hamilton at Formula One World Championship, Bahrain Grand Prix, Practice</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="/static/imagini/Ham/3.jpg" style="width:100%">
+          <div class="text">Lewis Hamilton on the drivers parade at Formula One World Championship</div>
+        </div>
+        
+        <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="/static/imagini/Ham/4.jpg" style="width:100%">
+                <div class="text">Race winner Lewis Hamilton celebrates with the team and the champagne at Formula One World Championship,</div>
+        </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="/static/imagini/Ham/5.jpg" style="width:100%">
+                <div class="text">Race winner Lewis Hamilton celebrates in parc ferme at Formula One World Championship, Spanish Grand Prix</div>
+        </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="/static/imagini/Ham/6.jpg" style="width:100%">
+                <div class="text">	Lewis Hamilton at Formula One World Championship, Monaco Grand Prix, Race</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>  
+    </div>         
+    <%- include('footer'); -%>
+    <script src="/static/JS/Ham.js"></script>    
+</body>
+</html>

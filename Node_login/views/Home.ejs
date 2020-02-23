@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula1</title>
+    <link rel="stylesheet" href="/static/Css/Home.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Logo">Formula1</div>
+        <nav>
+            <ul>
+                <li><a href="#.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Standings</a>
+                    <ul>
+                        <li><a href="Drivers_Standings">Drivers</a></li>
+                        <li><a href="Teams_Standings">Teams</a></li>
+                    </ul>
+                </li>
+                <li><a href="Drivers">Drivers</a></li>
+                <li><a href="Teams" class="active">Teams</a></li>
+                <li><a href="Last_race.">Last Race</a></li>
+                <li onclick="gobottom()" id="nexts"><a>Next season</a></li>
+                <a href="login" class="LogA" ><button class="LogB" >Login</buttonclass="LogB"></a>
+            </ul>
+        </nav>
+        <div class="menu-tog"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+    <img  src="/static/imagini/F1_banner.jpg" alt="Banner" class="Banner" >
+    <script src="https://kit.fontawesome.com/f3a776a26b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-tog').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <img class="leftimg" id="limg" src="/static/imagini/Verstapen.jpg">
+    <img class="rightimg" id="rimg" src="/static/imagini/Leclerc.jpg" alt="Leclerc" >
+    <div class="tbody" id="tbody">
+            <div class="head" > 
+                <strong onclick="clickEvent(event)"> Ce este Formula1? </strong> 
+            </div>
+            <div class="indent">
+                <P id="text"><strong>Formula1 </strong>(F1) este o întrecere de automobilism care se organizează anual sub forma a două campionate mondiale, care au loc în paralel, ambele fiind patronate de Federația Internațională a Automobilului (FIA). Numele de Formula provine de la faptul că toate echipele înscrise în campionat trebuie să își construiască mașinile (cunoscute și sub numele de monoposturi) după un anumit regulament, o formulă pe care o decide FIA. Cifra 1 provine de la faptul ca întrecerea este catalogată drept cea mai prestigioasă formulă organizată de FIA.</p>
+                <p id="text">Cele două campionate sunt <strong>Campionatul Mondial al Piloților </strong>(World Drivers' Championship) și <strong>Campionatul Mondial al Constructorilor</strong> (World Constructors' Championship). În actuala ediție a campionatului participă 10 echipe și 20 piloți.</p>
+            </div>
+            <div class="responsive-g1">
+                <div class="gallery">
+                    <a target="_blank" href="/static/imagini/Home_img1.jpg">
+                        <img src="/static/imagini/Home_img1.jpg" alt="Prima imagine" width="600" height="400">
+                    </a>
+                    <div class="desc">Italian Grand Prix 2018</div>
+                </div>
+            </div>
+            <div class="responsive-g1">
+                <div class="gallery">
+                    <a target="_blank" href="/static/imagini/Home_img2.jpg">
+                        <img src="/static/imagini/Home_img2.jpg" alt="A doua imagine" width="600" height="400">
+                    </a>
+                    <div class="desc">Rusian Grand Prix 2019</div>
+                </div>
+            </div>
+            <div class="responsive-g1">
+                <div class="gallery">
+                        <a target="_blank" href="/static/imagini/Home_img3.jpg">
+                            <img src="/static/imagini/Home_img3.jpg" alt="A treia imagine" width="600" height="400">
+                        </a>
+                        <div class="desc">Austrian Grand Prix 2016</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="head2"> 
+                    <strong> Cum se desfasoara o cursa? </strong> 
+            </div>
+            <div class="indent">
+                <p id="text">Un <strong>Grand Prix </strong>(cursa) este extins pe durata a trei zile, timp în care au loc antrenamentele libere, sesiunea de calificări și cursa propriu-zisă. Întrecerea are loc doar pe circuite special amenajate pentru curse și care sunt închise circulației publice.</p>
+                <p id="text"><strong>Antrenamentele libere</strong> au loc vinerea (două sesiuni) și sâmbăta (o sesiune). Cele două sesiuni de vineri durează 90 de minute, iar sesiunea de sâmbătă 60. În timpul lor piloții au dreptul să parcurgă câte ture de circuit doresc. În timpul sesiunilor de vineri echipele pot nominaliza un al treilea pilot pe lângă cei doi "de cursă", dar nu pot folosi mai mult de două monoposturi simultan.</p>
+                <p id="text"><strong>Sesiunea de calificări</strong> are loc sâmbăta după-amiaza, iar scopul ei este de a stabili grila de start pentru cursa de duminică. Sesiunea durează aproximativ o oră și este împărțită în trei etape.</p>
+            </div>
+            <p id="text">În prima etapă - care durează douăzeci de minute - participă toți piloții, numărul de tururi de circuit pe care aceștia îl parcurg fiind nelimitat. În clasamentul etapei se ține cont de cel mai rapid tur parcurs de fiecare pilot în parte. La finalul celor douăzeci de minute cicni piloți, cei cu cei mai slabi cinci timpi, sunt eliminați, ei urmând a ocupa locurile 16 - 20 pe grila de start.</p>
+            <p id="text">A doua etapă a sesiunii de calificări ține cincisprezece minute, la ea participând doar 15 piloți rămași, timpii obținuți în prima etapă fiind șterși. Din nou fiecare pilot are dreptul la un număr nelimitat de ture de circuit, iar la finalul acestei etape ultimii cinci piloți ai clasamentului de etapă - fiecare pilot intră în acest clasament cu cel mai bun timp al său - sunt eliminați, ei urmând să ocupe locurile 11 - 15 pe grila de start.</p>
+            <p id="text">A treia etapă durează zece minute, la ea participând cei zece piloți promovați din etapa a doua. Din nou timpii obținuți în etapa a doua sunt șterși. În cadrul acestei etape fiecare pilot are la dispoziție un număr nelimitat de ture. Se întocmește un nou clasament, pe baza căruia se stabilesc pozițiile 1 - 10 ale grilei de start.</p>
+            <p id="text">Pilotul cu cel mai bun timp din etapa a treia va pleca de pe prima poziție a grilei de start.Acești 10 piloți sunt obligați să utilizeze la startul cursei tipul de pneu cu care au realizat cel mai rapid tur în cea de a doua etapă de calificari  , dacă condițiile meteo fac necesară schimbarea de la pneuri de uscat la pneuri de ploaie sau invers li se permite acest lucru.</p>
+            <div class="indent">
+                <p class="important"><strong>Totuși grila de start poate fi alterată în funcție de diversele penalizări pe care le-ar putea primi piloții.</strong></p>
+            </div>
+            <div class="responsive-g2">
+                <div class="gallery2">
+                    <a target="_blank" href="/static/imagini/Home_img4.jpeg">
+                        <img src="/static/imagini/Home_img4.jpeg" alt="A patra imagine" width="600" height="400">
+                    </a>
+                    <div class="desc">Charles Leclerc pole Bahrain 2019</div>
+                </div>
+            </div>
+            <div class="responsive-g2">
+                <div class="gallery2">
+                        <a target="_blank" href="/static/imagini/Home_img5.jpg">
+                            <img src="/static/imagini/Home_img5.jpg" alt="A cincea imagine" width="600" height="400">
+                        </a>
+                        <div class="desc">Top 3 after qualifying Italy 2019</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="head3"> 
+                <strong> Cursa propriu-zisa </strong> 
+            </div>
+            <div class="indent">
+                <p id="text"> <strong>Cursa </strong>are loc duminica, distanța acesteia fiind de aproximativ 305 kilometri. Practic cursa se termina la capătul turului în timpul căruia s-a trecut de limita celor 305 km. În Marele Premiu de la Monte Carlo cursa are doar 260,52 km.</p>
+                <p id="text">Startul în cursă se dă de pe loc - față de cursele din Statele Unite ale Americii unde startul se dă din mișcare, mașinile fiind aliniate la start în funcție de rezultatul sesiunii de calificări. Startul este semnalizat prin culoarea verde a unui semafor amplasat în fața grilei de start. Dacă un pilot pleacă înainte de aprinderea luminii verzi, este penalizat.</pid="text">
+                <p id="text">Sistemul de punctaj s-a schimbat de multe ori de-a lungul timpului; actual punctele se acordă precum urmează: primul pilot care trece linia de sosire este declarat câștigător și primește 25 puncte în campionat, pilotul de pe locul al doilea primește 18 puncte, cel de pe locul al treilea 15 puncte, pilotul de pe locul al patrulea primește 12 puncte, cel de pe locul al cincilea 10 puncte, pilotul de pe locul al șaselea primește 8 puncte, cel de pe locul al șaptelea 6 puncte, pilotul de pe locul al optulea primește 4 puncte, cel de pe locul al nouălea 2 puncte și cel de pe locul al zecelea 1 punct. Punctajul echipelor se stabilește prin însumarea punctelor obținute de colegii de echipă. Ordinea finală poate fi alterată de penalizări.</p>
+                <p id="text">În anumite condiții cursa poate fi oprită înainte de parcurgerea celor 305 km. Dacă cursa se reia, la noul start se stabilește o noua grilă de start în funcție de locul ocupat de fiecare pilot în momentul opririi cursei. Dacă cursa nu se mai reia, dar s-a parcurs deja 75% din distanța ei, atunci ordinea din momentul opririi este declarată ordinea finală, punctajul fiind cel de mai sus. Dacă nu s-a parcurs 75% din distanța cursei, atunci punctajul este înjumătățit.</p>
+                <p class="important"><strong>Orice cursă nu poate dura mai mult de două ore din momentul startului.</strong></p>
+            </div>
+        </div>
+
+        <div class="footer"  onmousemove="showCoords(event)" onmouseout="clearCoor()">
+            Check this box if you are not a robot: <input type="checkbox" id="myCheckbox">
+            <p id="coord"></p>
+            <div class="topbt">
+                <button onclick="clickCounter()" onclick="topFunction()" id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
+                <div id="result"></div>
+            </div>
+            <button class="lastR" onclick="openWin()">Last Race</button>
+            <table class="timerContainer">
+                <tr class="info">
+                    <td colspan="4">Next season start in</td>
+                </tr>
+                <tr class="info">
+                    <td id="days">120</td>
+                    <td id="hours">4</td>
+                    <td id="minutes">12</td>
+                    <td id="seconds">6</td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+ 
+                <button id="btn1" onclick="removeLi1()" class="removebtn1">Remove left img</button>
+                <button id="btn2" onclick="removeLi2()" class="removebtn2">Remove right img</button>
+
+            <div class="size">
+                <p class="boxt1">Change font size</p>
+                <input type="text"  onkeypress="changeTextSize(event)" id="input1"  >
+                <p id="boxT" class="boxt">Change font color</p>
+                <input type="text" onkeypress="changefontcolor()" id="input2" >
+            </div>
+        </div>
+        
+        <script src="/static/JS/Home.js"></script>  
+</body>
+</html>
+

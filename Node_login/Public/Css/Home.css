@@ -1,0 +1,602 @@
+.Banner{
+    margin-top: 0;
+    border-radius: 0px 0px 830px 0px;
+    border-bottom: 10px solid rgb(201, 0, 0);
+    width: 100%;
+}
+header{
+    position: absolute;
+    margin: 7px;
+    margin-top: -0.2%;
+    margin-left: 1%;
+    background:rgba(165, 5, 5, 0);
+    width: 99%;
+    box-sizing: border-box;
+}
+header .Logo{
+    display:none;
+}
+header nav{
+    float: left;
+    width: 99%;
+    margin-left: 1%;
+}
+header nav ul{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+    padding-right: 5%;
+    margin-top: 0.69%;
+
+}
+
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    background-color:rgba(0,0,0,0.52);
+    display: none;
+}
+header nav ul li:hover ul{
+    display: block;
+    margin-left: -20pt;
+}
+header nav ul li ul li{
+    display: block;
+    width: 100%;
+    margin-top: 6.6%;
+    margin-bottom: 6.6%;
+}
+
+header nav ul li ul li a{
+    padding: 0px 0px;
+    min-width: 160px;
+    text-align: center;
+}
+header nav.active{
+    left: 0;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1vw;
+    font-family: 'Formula1';
+    transition: all .2s ease-in-out; 
+    text-shadow: 0 0 3px red;
+}
+header nav ul li a:hover{
+    transform: scale(1.15);
+    text-decoration: underline;
+    text-decoration-color: rgb(139, 139, 139);
+    
+}
+
+.menu-tog{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+.LogB{
+    margin-left: 28%;
+    background-color: rgba(119, 119, 119, 0);
+    color: white;
+    font-family: Formula1;
+    border: 0px solid black;
+    font-size: 1.3vw;
+    text-shadow: 0 0 3px red; 
+    padding: 20px 20px 20px 20px;
+    transition: all .5s ease-in-out; 
+}
+.LogA{
+    color: #ffffff;
+    text-decoration: none;}
+.LogB:hover{
+    transform: scale(1.50);
+    text-decoration: underline;
+    text-decoration-color: rgb(139, 139, 139);
+
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        padding: 0 20px;
+        margin: 0px;
+        margin-top: 0;
+        background-image: url("../imagini/F1_banner.jpg");
+        width: 100%;
+    }
+    
+    .Banner{
+        display: none;
+    }
+    .menu-tog{
+        display: block;
+        margin-top: 2%;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        margin-left: 0%;
+        height: calc(auto - 50px);
+        background:rgba(165, 5, 5, 0.541);
+        top: 65px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 99;
+    }
+    header nav.active{
+        left: 0;
+        color: white;
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+        float: left;
+        font-weight: bold;
+    }
+    header .Logo{
+        display: block;
+        float: left;
+        margin-top: 2.5%;
+        font-family: 'Formula1';
+        font-size: 20pt;
+        color: white;
+        height: 55px;
+        text-align: center;
+
+        text-shadow: 1px 2px 4px red;
+    }
+    header nav ul{
+        display: block;
+        text-align: left;
+    }
+    header nav ul li{
+        padding-right: 0%;
+        padding-left: 2%;
+        margin-top: 0%;
+        background-color: rgb(165, 5, 5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    header nav ul li:hover{
+        background-color: rgb(97, 0, 0);
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+    header nav ul li a:hover{
+        text-decoration: underline;
+        transform: scale(1);
+        text-decoration-color: rgb(139, 139, 139);
+    }
+    header nav ul li ul{
+        position: relative;
+        text-align: center;
+        width: auto;
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    header nav ul li ul li{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .LogB{
+        text-align: center;
+        position: relative;
+        background-color: rgba(119, 119, 119, 0);
+        color: white;
+        padding-right: 50%;
+        padding-left: 55%;
+        margin-left: -22%;
+        margin-top: 0%;
+        background-color: rgb(165, 5, 5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+        margin-bottom: 0%;
+        font-family: Formula1;
+        border: 0px solid black;
+        font-size: 1.3vw;
+        text-shadow: 0 0 3px red; 
+        position: relative;
+        text-align: center;
+        width: auto;
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+       }
+    .LogB:hover{
+        background-color: rgb(97, 0, 0);
+        text-decoration: underline;
+        transform: scale(1);
+        text-decoration-color: rgb(139, 139, 139);
+    }
+}
+strong{
+    margin: 0px;
+    color: black;
+}
+.head{
+    text-align: center;
+    font-family: 'Formula1';
+    font-size: 2.8vw;
+    padding-top: 1em;
+    margin-top: -52.3%;
+    text-shadow: 0 0 3px red;
+}
+.head2{
+    text-align: center;
+    font-family: 'Formula1';
+    font-size: 2.8vw;
+    padding-top: 2em;
+    margin-top: -5%;
+    position: relative;
+    text-shadow: 0 0 3px red;
+}
+@font-face {
+    font-family: Formula1;
+    src: url(../Fonts/Formula1-Bold.otf);
+ }
+
+.head3{
+    text-align: center;
+    font-family: 'Formula1';
+    font-size: 2.8vw;
+    padding-top: 1em;
+    margin-top: -2%;
+    position: relative;
+    text-shadow: 0 0 3px red;
+}
+
+.tbody{
+    margin-left: 21%;
+    margin-right: 21%;
+}
+.tbody1{
+    margin-top: 28%;
+    margin-left: 21%;
+    margin-right: 21%;
+}
+.indent{
+    text-indent: 50px;
+    margin-top: 3%;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15pt;
+    padding-top: -10px;
+    margin-top: 5px;
+}
+
+.important{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.35vw;
+}
+.gallery {
+    border: 2px solid #ccc;
+}
+.responsive-g1{
+    margin: 1%;
+    float: left;
+    width: 30.529%;
+    height: auto;
+
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.gallery:hover {
+    border: 4px solid #777;
+    height: 100%;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.gallery2 {
+    border: 2px solid #ccc;
+
+}
+.responsive-g2{
+    margin: 2%;
+    float: left;
+    width: 44.89%;
+    height: auto;
+}
+  
+.gallery2:hover {
+    border: 4px solid #777;
+}
+  
+.gallery2 img {
+    width: 100%;
+    height: auto;
+
+}
+ 
+img.leftimg{
+    position: sticky;
+    top: 20%;
+    width: 17.5%;
+    height: auto;
+    margin-left: 0.7%;
+    margin-right: 0.5%;
+    border-style: double;
+    border-width: 6px;
+    border-color: rgb(12, 0, 85);
+    color: red;
+}
+
+img.rightimg{
+    position: sticky;
+    top: 20%;
+    left: 80.5%;;
+    width: 17.5%;
+    height: 120%;
+    margin-right: 0.7%;
+    margin-left: 0.5%;
+    border-style: double;
+    border-width: 6px;
+    border-color: rgb(161, 1, 1);
+}
+
+.desc {
+    padding: 13px;
+    text-align: center;
+    height: auto;
+    font-size: 0.9vw;
+}
+
+.timerContainer{
+    text-align: center;
+    float: right;
+    margin-right: 7%;
+    border: 2px solid #777;
+    box-shadow: 0 0 5px 3px #777;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.2%;
+    padding-bottom: 0.1%;
+}
+.footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    float: right;
+    font-size: 1vw;
+    margin-top: 0px;
+    font-family: 'Formula1';    
+    border-top: 5px solid rgb(172, 3, 3);
+    border-radius: 15% 15% 0 0;
+}
+.removebtn1{
+    float: left;
+    margin-top: 0%;
+    margin-left: 4.9%;
+    background-color: rgb(100, 100, 100); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.65vw;
+    font-family: 'Formula1';
+    border: 1.5px solid rgb(153, 0, 0);
+    border-radius: 25%; 
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.removebtn2{
+    float: left;
+    margin-top: 3.3%;
+    margin-left: -9.9%;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.65vw;
+    font-family: 'Formula1';
+    border: 1.5px solid rgb(153, 0, 0);
+    border-radius: 25%; 
+    transition: transform .2s;
+    cursor: pointer;
+}
+.removebtn1:hover{
+    transform: scale(1.25);
+}
+.removebtn2:hover{
+    transform: scale(1.25);
+}
+.btnR1{
+    background-color: rgb(71, 18, 18);
+    float: left;
+    margin-top: 0%;
+    margin-left: 4.9%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.65vw;
+    font-family: 'Formula1';
+    border: 1.5px solid rgb(153, 0, 0);
+    border-radius: 25%; 
+    transition: transform .2s;
+    cursor: pointer;
+}
+.btnR2{
+    float: left;
+    margin-top: 3.3%;
+    margin-left: -9.9%;
+    background-color: rgb(71, 18, 18);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.65vw;
+    font-family: 'Formula1';
+    border: 1.5px solid rgb(153, 0, 0);
+    border-radius: 25%; 
+    transition: transform .2s;
+    cursor: pointer;
+}
+.lastR{
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 6%;
+    background-color: rgb(100, 100, 100); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3vw;
+    font-family: 'Formula1';
+    border: 1.5px solid rgb(153, 0, 0);
+    border-radius: 25%; 
+    transition: transform .2s;   
+    cursor: pointer;
+}
+.Time{
+    float: right;
+    margin-top: 4.5%;
+    margin-right: -11%;
+    background-color: rgb(100, 100, 100); 
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3vw;
+    font-family: 'Formula1';
+    border: 1.5px solid rgb(153, 0, 0);
+    border-radius: 25%; 
+    transition: transform .2s;   
+    cursor: pointer;
+}
+#back-to-top:hover{
+    transform: scale(1.5);
+}
+.lastR:hover{
+    transform: scale(1.25);
+}
+.info{
+    font-size: 2.0vw;
+    text-shadow: 0 0 3px red;  
+}
+.nexts{
+    cursor: pointer;
+}
+.timpC{
+    margin-left: 29%;
+}
+#back-to-top{
+    margin-top: 1.5%;
+    margin-right: 10%;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 50%;
+    float: right;
+    transition: transform .2s;  
+}
+.size{
+    float: left;
+    margin-left: 6.6%;
+    margin-top: -1.3%;
+}
+
+.boxt{
+    margin-bottom: -0.3%;
+    padding-top: 5%;
+}
+.boxt1{
+    margin-bottom: -0.3%;
+    padding-top: 5%;
+    
+}
+body{
+    margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .responsive-g1 {
+      width: 95%;
+      display: block;
+      margin-left: 2.5%;
+    }
+    .responsive-g2 {
+        width: 95%;
+        display: block;
+        margin-left: 2.5%;
+      }
+    .leftimg, .rightimg{
+        display: none;
+    }
+    p{
+        font-size: 12pt;
+    }
+    .head{
+        margin-top: 0%;
+    }
+    .head, .head3, .head2{
+        font-size: 31pt;
+    }
+    .tbody{
+        padding-top: 33pt;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+    .desc{
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .head, .head3, .head2{
+        font-size: 20pt;
+    }
+
+    .leftimg, .rightimg{
+        display: none;
+    }
+    .tbody{
+        padding-top: 42pt;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+}

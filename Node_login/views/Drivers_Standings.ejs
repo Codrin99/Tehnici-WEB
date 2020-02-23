@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula1 Drivers_Standings</title>
+    <link rel="stylesheet" href="/static/Css/Drivers_Standings.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Logo">Formula1</div>
+        <nav>
+            <ul>
+                <li><a href="Home_log">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Standings</a>
+                    <ul>
+                        <li><a href="Drivers_Standings">Drivers</a></li>
+                        <li><a href="Teams_Standings">Teams</a></li>
+                    </ul>
+                </li>
+                <li><a href="Drivers">Drivers</a></li>
+                <li><a href="Teams" class="active">Teams</a></li>
+                <li><a href="Last_race">Last Race</a></li>
+                <li onclick="gobottom()" id="nexts"><a>Next season</a></li>
+                <a href="/logout" class="LogA" ><button class="LogB" >Logout</buttonclass="LogB"></a>
+            </ul>
+        </nav>
+        <div class="menu-tog"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+    <img src="/static/imagini/F1_banner.jpg" alt="Banner" class="Banner">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-tog').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <img class="leftimg" src="/static/imagini/Albon.jpg" alt="Albon" height="580">
+    <img class="rightimg" src="/static/imagini/Ham.jpg" alt="Hamilton"  height="580">
+    <div class="tbody">
+        <div class="head"> 
+            <strong>Clasament Piloti 2019 </strong> 
+        </div>
+        <div style="overflow-x:auto;">
+            <table id="clasament">
+                <tr>
+                    <th>
+                        <abbr title="Position">Pos</abbr>
+                    </th>
+                    <th>Driver</th>
+                    <th>Nationality</th>
+                    <th>Car NR.</th>
+                    <th>Team</th>
+                    <th>
+                        <abbr title="Points">PTS</abbr>
+                    </th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">Lewis Hamilton</a></td>
+                    <td>GBR</td>
+                    <td>44</td>
+                    <td><a href="#">MERCEDES</a></td>
+                    <td>363</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">Valtteri Bottas</a></td>
+                    <td>FIN</td>
+                    <td>77</td>
+                    <td><a href="#">MERCEDES</a></td>
+                    <td>289</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">Charles Leclerc</a></td>
+                    <td>MON</td>
+                    <td>16</td>
+                    <td><a href="#">FERRARI</a></td>
+                    <td>236</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#">Sebastian Vettel</a></td>
+                    <td>GER</td>
+                    <td>5</td>
+                    <td><a href="#">FERRARI</a></td>
+                    <td>230</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#">Max Verstappen</a></td>
+                    <td>GBR</td>
+                    <td>33</td>
+                    <td><a href="#">RED BULL RACING HONDA</a></td>
+                    <td>220</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="#">Pierre Gasly</a></td>
+                    <td>FRA</td>
+                    <td>10</td>
+                    <td><a href="#">SCUDERIA TORO ROSSO HONDA</a></td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="#">Carlos Sainz</a></td>
+                    <td>ESP</td>
+                    <td>55</td>
+                    <td><a href="#">MCLAREN RENAULT</a></td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="#">Alexander Albon</a></td>
+                    <td>THA</td>
+                    <td>23</td>
+                    <td><a href="#">RED BULL RACING HONDA</a></td>
+                    <td>74</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="#">Sergio Perez</a></td>
+                    <td>MEX</td>
+                    <td>11</td>
+                    <td><a href="#">RACING POINT BWT MERCEDES</a></td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="#">Daniel Ricciardo</a></td>
+                    <td>AUS</td>
+                    <td>3</td>
+                    <td><a href="#"> RENAULT</a></td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><a href="#">Nico Hulkenberg</a></td>
+                    <td>GER</td>
+                    <td>27</td>
+                    <td><a href="#"> RENAULT</a></td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><a href="#">Lando Norris</a></td>
+                    <td>GBR</td>
+                    <td>4</td>
+                    <td><a href="#">MCLAREN RENAULT</a></td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><a href="#">Daniil Kvyat</a></td>
+                    <td>RUS</td>
+                    <td>26</td>
+                    <td><a href="#">SCUDERIA TORO ROSSO HONDA</a></td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><a href="#">Kimi Räikkönen</a></td>
+                    <td>FIN</td>
+                    <td>7</td>
+                    <td><a href="#">ALFA ROMEO RACING FERRARI</a></td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td><a href="#">Lance Stroll</a></td>
+                    <td>CAN</td>
+                    <td>18</td>
+                    <td><a href="#">RACING POINT BWT MERCEDES</a></td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td><a href="#">Kevin Magnussen</a></td>
+                    <td>DEN</td>
+                    <td>20</td>
+                    <td><a href="#">HAAS FERRARI</a></td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td><a href="#">Romain Grosjean</a></td>
+                    <td>FRA</td>
+                    <td>8</td>
+                    <td><a href="#">HAAS FERRARI</a></td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td><a href="#">Antonio Giovinazzi</a></td>
+                    <td>ITA</td>
+                    <td>99</td>
+                    <td><a href="#">ALFA ROMEO RACING FERRARI</a></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td><a href="#">Robert Kubica</a></td>
+                    <td>POL</td>
+                    <td>88</td>
+                    <td><a href="#">WILLIAMS MERCEDES</a></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td><a href="#">George Russell</a></td>
+                    <td>GBR</td>
+                    <td>63</td>
+                    <td><a href="#">WILLIAMS MERCEDES</a></td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <%- include('footer'); -%>
+</body>
+</html>  
